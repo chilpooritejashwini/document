@@ -1,0 +1,23 @@
+package pack1;
+
+public class pubaccessspecifier {
+
+	public void display() 
+    { 
+        System.out.println("This is Public Access Specifiers"); 
+    } 
+}
+
+//create another package
+package pack2;
+import pack1.*;
+
+public class Pubaccesspecifier {
+
+	public static void main(String[] args) {
+		
+		pubaccessspecifier obj = new pubaccessspecifier(); 
+        obj.display();  
+		
+	}
+}

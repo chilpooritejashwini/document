@@ -1,0 +1,35 @@
+import java.util.Arrays;
+public class exponentialSearch {
+	public static  void main(String[] args){
+
+	    int[] arr = {15,58,36,80,74};
+	    int length= arr.length;
+	    int value = 36;
+	    int outcome = exponentialSearch(arr,length,value);
+
+	    if(outcome<0){
+
+	       System.out.println( "Element is not present in the array");
+
+	    }else {
+
+	        System.out.println( "Element is  present in the array at index :"+outcome);
+	    }
+
+	        }
+
+	        public static int exponentialSearch(int[] arr ,int length, int value ){
+
+	        if(arr[0]==value){
+	            return 0;
+	            }
+	        int j=1;
+	        while(j<length && arr[j]<=value){
+
+	            j=j*2;
+	        }
+	        return Arrays.binarySearch(arr,j/2,Math.min(j,length),value);
+	        }
+
+
+	}
