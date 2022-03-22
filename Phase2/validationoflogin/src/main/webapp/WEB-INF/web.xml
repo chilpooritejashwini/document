@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:web="http://xmlns.jcp.org/xml/ns/javaee">
+  <display-name>validationoflogin</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>validation</display-name>
+    <servlet-name>validation</servlet-name>
+    <servlet-class>com.validation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>validation</servlet-name>
+    <url-pattern>/validation</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Validation</display-name>
+    <servlet-name>Validation</servlet-name>
+    <servlet-class>com.Validation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Validation</servlet-name>
+    <url-pattern>/Validation</url-pattern>
+  </servlet-mapping>
+</web-app>

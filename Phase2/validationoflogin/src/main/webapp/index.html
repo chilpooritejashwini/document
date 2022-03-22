@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Welcome to the webpage </h1>
+<form action="<%=request.getContextPath()%>/Validation" method="get">
+User name: <input type="text" name="name" required="required"/><br/>
+Password: <input type="password" name="password" required="required"><br/>
+<input type="submit" name="submit" value="submit">
+ </form>
+</body>
+</html>
